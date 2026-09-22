@@ -1,5 +1,5 @@
 -- ========================================
--- File: 01_schema_overview.sql
+-- File: 00_schema_overview.sql
 -- Business Question: Verify tables loaded correctly
 -- Author: JosteinCT
 -- Date: 2026-09-22
