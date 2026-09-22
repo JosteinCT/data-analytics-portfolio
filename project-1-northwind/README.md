@@ -17,14 +17,12 @@ Identify revenue drivers and customer value segments to inform sales strategy an
 - Git/GitHub (version control)
 
 ## Project Structure
-
-project-1-northwind/
-|-- queries/ (SQL scripts)
-|   |-- 00_schema_overview.sql
-|   |-- 01_top_customers.sql
-|-- outputs/ (CSV exports)
-|
-`-- README.md
+- project-1-northwind/
+  - queries/ (SQL scripts)
+    - 00_schema_overview.sql
+    - 01_top_customers.sql
+  - outputs/ (CSV exports)
+  - README.md
 
 ## Key Findings
 
