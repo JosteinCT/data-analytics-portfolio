@@ -17,14 +17,22 @@ Identify revenue drivers and customer value segments to inform sales strategy an
 - Git/GitHub (version control)
 
 ## Project Structure
-project-1-northwind/ ├── queries/ ← SQL scripts organized by analysis topic ├── outputs/ ← CSV exports and visualizations └── README.md ← This file
+```project-1-northwind/ ├── queries/ ← SQL scripts organized by analysis topic ├── outputs/ ← CSV exports and visualizations └── README.md ← This file```
+
+
+## Key Findings
+
+### Customer Value Analysis (Query 01)
+- **Top 3 Customers:** QUICK-Stop (Germany, $110,277), Ernst Handel (Austria, $104,875), Save-a-lot Markets (USA, $104,362)
+- **Revenue Concentration:** Top 3 customers contribute ~25% of total revenue
+- **Geographic Pattern:** Europe dominates top tier (Germany, Austria), plus USA
+
+*(See `/queries/01_top_customers.sql` for methodology)*
 
 ## Status
-🟡 **In Progress** — Schema verified, planning business questions.
-
----
+🟢 **Active Progress** — Query 01 complete, analyzing sales trends next.
 
 ## Next Steps
-1. Complete customer value analysis (Queries 02-03)
-2. Analyze sales trends over time (Queries 04-05)
-3. Investigate customer retention patterns (Query 06)
+1. Analyze sales trends over time (Queries 02-03)
+2. Investigate customer retention patterns (Query 04)
+3. Explore product profitability and geographic performance (Queries 05+)
