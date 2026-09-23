@@ -37,10 +37,19 @@ Identify revenue drivers and customer value segments to inform sales strategy an
 - **Major Anomaly:** May 1998 (-66% revenue, -56% orders) — requires business investigation
 - **Pattern:** Q1-Q2 1998 outperformed Q3-Q4 1997 significantly
 
-## Status
-[Active] Query 01 complete, analyzing sales trends next.
+### Customer Retention Analysis (Query 03)
+- **Loyal Customers:** 67.42% (60 customers) ordered across all 3 years
+- **Repeat Customers:** 28.09% (25 customers) ordered for 2 years
+- **One-Time Customers:** Only 4.49% (4 customers) — exceptionally low churn rate
+- **Overall Retention:** ~95.5% of customers returned for subsequent orders
+- **Insight:** Northwind demonstrates strong customer relationship management with minimal churn
 
-## Next Steps
-1. Analyze sales trends over time
-2. Investigate customer retention patterns
-3. Explore product profitability
+*(See `/outputs/customer_retention_analysis.csv` for full customer list by tier)*
+
+## Status
+🟢 **Complete** — All core queries (01-03) finished with documented findings.
+
+## Completed Queries
+1. ✅ Customer Revenue Analysis (Query 01)
+2. ✅ Monthly Sales Trends (Query 02)
+3. ✅ Customer Retention Analysis (Query 03)
