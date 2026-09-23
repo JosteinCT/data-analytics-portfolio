@@ -46,6 +46,15 @@ Identify revenue drivers and customer value segments to inform sales strategy an
 
 *(See `/outputs/customer_retention_analysis.csv` for full customer list by tier)*
 
+### Geographic Performance (Query 04)
+- **Top 3 Markets:** USA (19.4%), Germany (18.2%), Austria (10.1%) = 47.7% of total revenue
+- **Market Concentration Risk:** Nearly 50% revenue from 3 countries
+- **European Strength:** 15 of 21 countries are European
+- **Low-Volume Markets:** Poland, Norway, Argentina each <1% revenue
+- **Insight:** Diversification opportunity in underperforming regions
+
+*(See `/outputs/geographic_analysis.csv` for full 21-country breakdown)*
+
 ## Status
 🟢 **Complete** — All core queries (01-03) finished with documented findings.
 
