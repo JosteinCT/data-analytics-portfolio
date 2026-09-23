@@ -31,6 +31,12 @@ Identify revenue drivers and customer value segments to inform sales strategy an
 - Revenue Concentration: Top 3 customers contribute ~25% of total revenue
 - Geographic Pattern: Europe dominates top tier, plus USA
 
+### Monthly Sales Trends (Query 02)
+- **Overall Trend:** Strong growth through 1997 (+70% to +110% YoY)
+- **Peak Performance:** March 1998 (+172% revenue vs. previous year)
+- **Major Anomaly:** May 1998 (-66% revenue, -56% orders) — requires business investigation
+- **Pattern:** Q1-Q2 1998 outperformed Q3-Q4 1997 significantly
+
 ## Status
 [Active] Query 01 complete, analyzing sales trends next.
 
