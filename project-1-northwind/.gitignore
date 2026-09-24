@@ -1,0 +1,22 @@
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled objects
+*.pyc
+*.class
+*.o
+
+# Sensitive data
+*.key
+secrets.json
