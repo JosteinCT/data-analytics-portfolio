@@ -26,10 +26,10 @@
 - Documentation (README, CSV exports, version control)
 
 ## Data Source
-**Dataset:** Northwind Traders Sample Database
-**Original Source:** Microsoft SQL Server Samples (public domain)
-**PostgreSQL Conversion:** https://github.com/pthom/northwind_psql
-**License:** Public Domain / MIT
+- **Dataset:** Northwind Traders Sample Database
+- **Original Source:** Microsoft SQL Server Samples (public domain)
+- **PostgreSQL Conversion:** [https://github.com/pthom/northwind_psql](https://github.com/pthom/northwind_psql)
+- **License:** Public Domain / MIT
 
 ## Business Objective
 Identify revenue drivers and customer value segments to inform sales strategy and retention efforts.
