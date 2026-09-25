@@ -1,0 +1,22 @@
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# Large files
+*.pbix
+*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
