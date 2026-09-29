@@ -1,22 +1,35 @@
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
-
 # Python
 __pycache__/
-*.pyc
-*.pyo
-
-# IDE
-.vscode/
-.idea/
-
-# Environment
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
 .env
 
-# Large files
-*.pbix
-*.xlsx
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Data (COMMENTED OUT - want these visible on GitHub!)
+# data/raw/*.csv
+# data/cleaned/*.csv
+
+# Outputs (OPTIONAL - comment if you want PNGs/CSVs visible too)
+# outputs/*.png
+# outputs/*.jpg
+# outputs/*.csv
+
+# Environment variables
+.env
