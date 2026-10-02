@@ -1,0 +1,43 @@
+# Power BI Temporary/Cache Files
+*.pbix.tmp
+*.pbix.backup
+TempResultsDir/
+PowerBI/
+.AppleDouble
+LSDeleteVersion*
+Icon?
+
+# Windows System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Power BI Personal Gateway Files (if applicable)
+PersonalGatewayConfig.json
+
+# Environment Variables (sensitive)
+.env
+.env.local
+
+# Documentation Build Artifacts (if using docs generators)
+_build/
+docs/_build/
+
+# Large binary files (OPTIONAL - decide based on repo size goals)
+# Uncomment if you want to exclude PBIX files from Git
+# reports/*.pbix
+
+# Keep screenshots (small files)
+# Do NOT exclude outputs/*.png
+
+# Log files
+*.log
