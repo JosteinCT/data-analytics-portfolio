@@ -84,6 +84,7 @@ Attrition Rate % = DIVIDE(
     COUNTROWS(FILTER(EmployeeData, EmployeeData[Attrition] = "Yes")),
     COUNTROWS(EmployeeData)
 )
+```
 
 **Principle Applied:** Minimize transformation steps unless they serve clear analytical or UX purposes.
 
@@ -108,6 +109,8 @@ Attrition Rate % = DIVIDE(
 **Date:** October 06, 2026  
 **Reviewer:** JosteinCT (validated by AI assistant review)
 
+---
+
 ## Step 5: Evaluated Star Schema Modeling
 
 **Decision:** SKIP — retain single flat table model
@@ -122,4 +125,7 @@ Attrition Rate % = DIVIDE(
 
 **Date:** October 06, 2026
 **Reviewer:** JosteinCT
+
+
+
 
