@@ -13,8 +13,10 @@
 
 **Principle Applied:** Avoid adding derived columns unless they serve clear analytical or UX purposes.
 
-**Date:** October 05, 2026
+**Date:** October 05, 2026  
 **Reviewer:** JosteinCT (validated by AI assistant review)
+
+---
 
 ## Step 1: Add AgeGroup Column
 
@@ -22,7 +24,7 @@
 **Purpose:** Segment employees by age range for dashboard filtering and analysis  
 
 **Implementation Method:** Power Query UI (Add Conditional Column)  
-*(Not handwritten M code — UI method is more maintainable)*
+*(UI method chosen over handwritten M code for easier maintenance and transparency)*
 
 **Conditional Logic:**
 | Condition | Result |
@@ -35,7 +37,7 @@
 **Result:** New column `AgeGroup` with 4 categorical values  
 **Data Type:** Text (manual adjustment from General)  
 **Validation:** Verified 4 distinct categories in preview  
-**Benefit:** Enables age-segmented slicers on dashboard without complex DAX  
+**Benefit:** Enables age-segmented slicers on dashboard without complex DAX
 
 **Notes:** Using UI-based conditional column instead of M formula for easier maintenance and transparency.
 
@@ -47,7 +49,6 @@
 **Purpose:** Categorize employees by compensation level for attrition correlation analysis  
 
 **Implementation Method:** Power Query UI (Add Conditional Column)  
-*(Not handwritten M code — UI method is more maintainable)*
 
 **Conditional Logic:**
 | Condition | Result |
@@ -62,9 +63,11 @@
 **Validation:** Verified 4 distinct categories in preview  
 **Benefit:** Enables income-segmented analysis (correlates with attrition per Project 2 findings)
 
-**Notes:** Using UI-based conditional column instead of M formula for easier maintenance and transparency.
+**Notes:** Thresholds aligned with Project 2 Python EDA findings (mean income $4,760 for attrited vs $6,692 for retained).
 
-## Step 3: Evaluated AttritionFlag Addition
+---
+
+## Step 3: Evaluated AttritionFlag Binary Column Addition
 
 **Decision:** SKIP adding AttritionFlag binary column
 
@@ -82,7 +85,41 @@ Attrition Rate % = DIVIDE(
     COUNTROWS(EmployeeData)
 )
 
-Principle Applied: Minimize transformation steps unless they serve clear analytical or UX purposes.
+**Principle Applied:** Minimize transformation steps unless they serve clear analytical or UX purposes.
 
-Date: October 05, 2026 Reviewer: JosteinCT (validated by AI assistant review)
+**Date:** October 06, 2026  
+**Reviewer:** JosteinCT (validated by AI assistant review)
+
+---
+
+## Step 4: Evaluated Date Table Creation
+
+**Decision:** SKIP creating date table in Power Query
+
+**Rationale:**
+- Original dataset has no temporal dimension (no hire date, attrition date columns)
+- Cannot create meaningful time-series analysis without dates
+- Dashboard will focus on cross-sectional analysis instead
+
+**Impact:** Attrition Trend Line chart will show department-wise breakdown instead of monthly trends
+
+**Principle Applied:** Do not fabricate temporal data that doesn't exist in the source.
+
+**Date:** October 06, 2026  
+**Reviewer:** JosteinCT (validated by AI assistant review)
+
+## Step 5: Evaluated Star Schema Modeling
+
+**Decision:** SKIP — retain single flat table model
+
+**Rationale:**
+- Single fact source (1 table, 1,470 rows) with no shared dimensions
+- `AgeGroup`, `IncomeBracket`, `Department` function as implicit dimensions within the table
+- Splitting into dimension tables would add relationship management complexity with zero analytical benefit
+- Star schemas deliver value with multiple fact tables, conformed dimensions, or large volumes — none apply here
+
+**Principle Applied:** Model complexity must be justified by analytical need, not methodology for its own sake.
+
+**Date:** October 06, 2026
+**Reviewer:** JosteinCT
 

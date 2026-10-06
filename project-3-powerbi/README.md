@@ -6,6 +6,10 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 
 **Key Insight:** The dashboard enables HR to identify at-risk employee segments and prioritize retention interventions based on data-driven thresholds.
 
+**Status:** ⏳ In Progress (Building DAX measures and visuals)
+
+---
+
 ## Dataset & Integration
 
 - **Source:** IBM HR Analytics Employee Attrition & Performance
@@ -13,70 +17,103 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 - **Records:** 1,470 employees after cleaning
 - **Link to Project 2:** [project-2-python](../project-2-python)
 
-## Dashboard Features
+---
+
+## Dashboard Features (Planned)
 
 | Feature | Description | Visual Element |
 |---------|-------------|----------------|
-| **Interactive Slicers** | Filter by department, age, tenure | Dropdowns/sliders |
-| **KPI Cards** | Instant overview of key metrics | Top panel |
-| **Trend Analysis** | Monthly/annual attrition patterns | Line chart |
-| **Segment Comparison** | Department-wise breakdown | Bar chart |
-| **Correlation Insights** | Income/satisfaction vs attrition | Scatter/heatmap |
+| **Interactive Slicers** | Filter by department, age group, income bracket | Dropdowns/sliders |
+| **KPI Cards** | Instant overview of headcount, attrition rate, avg income, avg satisfaction | Top panel |
+| **Department Comparison** | Attrition rate by department | Horizontal bar chart |
+| **Income vs Attrition** | Compensation threshold analysis | Scatter plot |
+| **Age Distribution** | Demographic breakdown by attrition status | Stacked histogram |
+| **Job Satisfaction Matrix** | Engagement correlation heatmap | Matrix/Heatmap |
 
-## DAX Measures Implemented
+**Note:** Time-series trend analysis removed due to lack of date column in dataset.
 
-| Measure | Formula | Purpose |
-|---------|---------|---------|
-| Attrition Rate | `DIVIDE(COUNT(Yes), COUNT(ALL))` | Primary metric |
-| Avg Income | `AVERAGE(MonthlyIncome)` | Compensation baseline |
-| Headcount by Dept | `CALCULATE(COUNTROWS(), GROUPBY(Department))` | Segment analysis |
+---
 
-## Power Query Transformations
+## Power Query Transformations (Completed)
 
 1. Import cleaned CSV from Project 2
-2. Create date table for trend analysis
-3. Aggregate department-level metrics
-4. Calculate derived columns (attrition flag, income brackets)
-5. Optimize for visual performance
+2. Create `AgeGroup` column (4 age categories via UI)
+3. Create `IncomeBracket` column (4 income categories via UI)
+4. Skip unnecessary columns (index, binary attrition flag)
+5. Validate data types (categorical fields as Text)
+
+**Documentation:** [power_query_steps.md](src/power_query_steps.md)
+
+---
+
+## DAX Measures (In Progress)
+
+| Measure | Formula Preview | Purpose |
+|---------|-----------------|---------|
+| Total Employees | `COUNTROWS(EmployeeData)` | Baseline workforce size |
+| Attrition Count | `COUNTROWS(FILTER(...))` | Turnover volume |
+| Attrition Rate % | `DIVIDE([Count], [Total])` | Primary KPI |
+| Avg Monthly Income | `AVERAGE(MonthlyIncome)` | Compensation benchmark |
+| Avg Job Satisfaction | `AVERAGE(JobSatisfaction)` | Engagement indicator |
+
+**Full Documentation:** [dax_measures.txt](src/dax_measures.txt) *(to be created)*
+
+---
 
 ## Screenshots
 
-*(Exported dashboard views for GitHub documentation)*
+*(Will be exported after dashboard completion)*
 
-- [01 Executive Summary Card](outputs/01_executive_summary_card.png)
-- [02 Attrition Trend Line](outputs/02_attrition_trend_line.png)
-- [03 Department Comparison Bar](outputs/03_dept_comparison_bar.png)
-- [04 Income Scatter Plot](outputs/04_income_scatter_plot.png)
-- [05 Age Histogram](outputs/05_age_histogram.png)
-- [06 Full Dashboard View](outputs/06_full_dashboard_view.png)
+- [ ] 01 Executive Summary Card
+- [ ] 02 Department Comparison Bar
+- [ ] 03 Income vs Attrition Scatter
+- [ ] 04 Age Distribution Histogram
+- [ ] 05 Job Satisfaction Matrix
+- [ ] 06 Full Dashboard View
 
-## Tools & Libraries
+---
 
-- **Platform**: Power BI Desktop Free Edition
-- **Languages**: DAX (Data Analysis Expressions)
-- **Environment**: Windows 11, Git/GitHub
-- **Development Support**: AI-assisted coding and documentation review
+## Tools & Environment
+
+- **Platform:** Power BI Desktop Free Edition
+- **Languages:** DAX (Data Analysis Expressions)
+- **Environment:** Windows 11, Git/GitHub
+- **Development Support:** AI-assisted coding and documentation review
+
+---
 
 ## Limitations (Free Edition)
 
 - Dashboard cannot be published to Power BI Service (cloud)
-- Sharing requires manual distribution of PBIX file
+- Sharing requires manual distribution of .pbix file
 - No scheduled refresh capability
 - Screenshot exports used for GitHub documentation
 
+---
+
 ## Appendix: Data Quality & Methodology Notes
 
-*(Same cleaning summary from Project 2 - inherited dataset)*
+*See Project 2 documentation for complete data cleaning methodology.*  
+This dataset inherits all cleaning decisions from the Python EDA pipeline:
+
+- Missing value imputation (median for numeric, mode for categorical)
+- Duplicate removal (exact and partial based on EmployeeNumber + Department)
+- Outlier capping using IQR method with multiplier 1.5
+- Category standardization to Title Case
 
 ---
 
-*Last Updated: TBD*  
+*Last Updated: October 06, 2026*  
 *Author: JosteinCT*  
 *Portfolio Project 3: Power BI Dashboard*
+
+---
 
 ## License
 
 MIT License — See LICENSE file
+
+---
 
 ## Attribution
 
