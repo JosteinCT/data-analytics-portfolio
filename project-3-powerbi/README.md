@@ -4,7 +4,21 @@
 
 This project transforms Python EDA insights into an interactive Power BI dashboard for HR leadership. The dashboard monitors employee attrition patterns with focus on department-level performance, compensation thresholds, and satisfaction correlations.
 
-**Key Insight:** The dashboard enables HR to identify at-risk employee segments and prioritize retention interventions based on data-driven thresholds.
+## Key Insights Validated Across Projects
+
+### Insight 1: Income Threshold Determines Retention Risk
+- Employees earning < $4,000/month have 25.2% attrition rate
+- Employees earning ≥ $12,000/month have 4.9% attrition rate
+- **Recommendation:** Review compensation structure for low-income roles
+
+### Insight 2: Early Career Needs Targeted Support
+- Employees under 30 leave at 27.8% rate vs 10.3% for ages 40-49
+- **Recommendation:** Implement mentorship programs for new hires
+
+### Insight 3: Department Culture Affects Retention Independently
+- Sales has highest income but highest attrition (20.8%)
+- HR has lowest income but moderate attrition (19.4%)
+- **Recommendation:** Investigate sales team workload/burnout factors
 
 **Status:** ⏳ In Progress (Building DAX measures and visuals)
 

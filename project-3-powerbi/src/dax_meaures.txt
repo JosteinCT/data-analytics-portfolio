@@ -3,69 +3,45 @@ DAX MEASURES — ATTRITION DASHBOARD
 ====================================
 
 Created: October 06, 2026
+Updated: October 07, 2026
 Table: _Measures (dedicated measures container)
 Data Source: Employees (1,470 rows)
-Status: Core KPIs Complete | Additional measures in progress
+Status: ALL 8 MEASURES COMPLETE
 
 ------------------------------------
-CORE KPI MEASURES (COMPLETE)
+COMPLETE MEASURE LIST (VALIDATED)
 ------------------------------------
 
 Measure #1: Total Employees
 Formula: Total Employees = COUNTROWS(Employees)
 Result: 1,470
-Purpose: Baseline headcount for all calculations
-Validation: Verified via Table visual
-
-------------------------------------
 
 Measure #2: Attrition Count
 Formula: Attrition Count = CALCULATE([Total Employees], Employees[Attrition] = "Yes")
-Result: 237 (approximately)
-Purpose: Volume of employees who left
-Validation: Matches expected attrition rate
-
-------------------------------------
+Result: ~237
 
 Measure #3: Attrition Rate %
 Formula: Attrition Rate % = DIVIDE([Attrition Count], [Total Employees], 0)
 Result: 16.1%
 Format: Percentage (1 decimal place)
-Purpose: Primary turnover metric for HR leadership
-Validation: Consistent with Project 2 Python EDA findings
-
-------------------------------------
-PENDING MEASURES (Session 2)
-------------------------------------
 
 Measure #4: Avg Monthly Income
 Formula: Avg Monthly Income = AVERAGE(Employees[MonthlyIncome])
-Expected Result: ~6,504
-Purpose: Compensation benchmark
+Result: ~6,504 (overall average)
 
 Measure #5: Avg Job Satisfaction
 Formula: Avg Job Satisfaction = AVERAGE(Employees[JobSatisfaction])
-Expected Result: ~3.0
-Purpose: Engagement indicator
+Result: 2.3–2.8 (varies by segment)
+Format: Decimal (1 place)
 
 Measure #6: Headcount by Department
 Formula: Headcount by Department = CALCULATE([Total Employees], ALLEXCEPT(Employees, Employees[Department]))
-Purpose: Department-wise workforce distribution
+Results: HR=62, R&D=984, Sales=424
 
 Measure #7: Attrition Rate by Department
-Formula: Attrition Rate by Dept = DIVIDE(CALCULATE([Attrition Count], ALLEXCEPT(Employees, Employees[Department])), CALCULATE([Total Employees], ALLEXCEPT(Employees, Employees[Department])))
-Purpose: Department-specific turnover risk
+Formula: Attrition Rate by Department = DIVIDE(CALCULATE([Attrition Count], ALLEXCEPT(Employees, Employees[Department])), CALCULATE([Total Employees], ALLEXCEPT(Employees, Employees[Department])))
+Results: HR=19.4%, R&D=13.9%, Sales=20.8%
 
 Measure #8: Avg Income by Bracket
 Formula: Avg Income by Bracket = CALCULATE([Avg Monthly Income], ALLEXCEPT(Employees, Employees[IncomeBracket]))
-Purpose: Show compensation variation across brackets
-
-------------------------------------
-MEASUREMENT NOTES
-------------------------------------
-
-1. Used CALCULATE for context modification (filtering)
-2. Used DIVIDE for safe division (handles divide-by-zero)
-3. Used ALLEXCEPT for department-level breakdowns
-4. All measures stored in dedicated _Measures table
-5. _Measures table hidden after creation (model cleanliness)
+Results: Low=$2,689, Medium=$5,221, High=$9,357, Very High=$16,623
