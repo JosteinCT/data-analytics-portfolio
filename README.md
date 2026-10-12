@@ -1,7 +1,7 @@
 # Data Analytics Portfolio | JosteinCT
 
 > **Microsoft PL-300 Certified** | SQL • Python • Power BI  
-> GitHub: github.com/JosteinCT | Portfolio: https://github.com/JosteinCT/data-analytics-portfolio
+> GitHub: [JosteinCT](https://github.com/JosteinCT) | Portfolio: [data-analytics-portfolio](https://github.com/JosteinCT/data-analytics-portfolio)
 
 ---
 
@@ -25,9 +25,15 @@ This collection demonstrates end-to-end data analytics capabilities across the m
 
 ## 🏗️ Project Pipeline Overview
 
-**Analysis Workflow Across Tools**
+### Analysis Workflow
 
-+------------------+ +--------------------+ +---------------------+ | Phase 1: | --> | Phase 2: | --> | Phase 3: | | Data Extraction | | Deep-Dive | | Visualization | +------------------+ +--------------------+ +---------------------+ | Tool: SQL | | Tool: Python | | Tool: Power BI | | Question: | | Question: | | Question: | | "What's | | "Why is it | | "How do we track | | happening?" | | happening?" | | going forward?" | +------------------+ +--------------------+ +---------------------+
+**Phase 1: Data Extraction → Phase 2: Deep-Dive → Phase 3: Visualization**
+
+| Phase | Project | Primary Tool | Core Question Answered |
+|-------|---------|--------------|------------------------|
+| 1 | Northwind Sales Analysis | SQL (PostgreSQL) | What's happening in our business? |
+| 2 | IBM HR Attrition Analysis | Python (Pandas) | Why is it happening? |
+| 3 | Attrition Monitoring Dashboard | Power BI (DAX) | How do we track it going forward? |
 
 **Cross-Project Connection:** The HR Attrition theme connects Projects 2 and 3, demonstrating ability to extend analysis across tools while maintaining consistent findings.
 
