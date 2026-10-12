@@ -6,8 +6,8 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 
 **Key Insight:** The dashboard enables HR to identify at-risk employee segments and prioritize retention interventions based on data-driven thresholds.
 
-**Project Timeline:** October 5-9, 2026 (5 days, ~15 hours)  
-**Status:** ✅ Complete
+**Status:** 🟢 **COMPLETE**  
+**Project Timeline:** October 5-9, 2026 (5 days, ~10-12 hours)
 
 ---
 
@@ -38,7 +38,32 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 
 ---
 
-## Dashboard Features
+## Project Structure
+- project-3-powerbi/
+  - .gitignore
+  - LICENSE
+  - README.md
+  - reports/
+    - 01_attrition_dashboard.pbix (main Power BI report)
+  - data/
+    - processed/
+      - IBM_HR_Employee_Attrition_CLEAN.csv (imported from Project 2)
+  - src/
+    - dax_measures.txt (DAX documentation)
+    - power_query_steps.md (transformations log)
+  - outputs/ (exported screenshots)
+    - 01_executive_summary_card.png
+    - 02_department_comparison_bar.png
+    - 03_income_bracket_analysis.png
+    - 04_age_distribution_bar.png
+    - 05_scatter_department_income.png
+    - 06_full_dashboard_view.png
+
+---
+
+## Technical Implementation
+
+### Dashboard Features
 
 | Feature | Description | Visual Element |
 |---------|-------------|----------------|
@@ -51,11 +76,8 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 
 **Note:** Time-series trend analysis omitted due to lack of date column in dataset.
 
----
+### Power Query Transformations
 
-## Power Query Transformations
-
-### Completed Steps
 1. Import cleaned CSV from Project 2
 2. Create `AgeGroup` column (4 age categories via UI)
 3. Create `IncomeBracket` column (4 income categories via UI)
@@ -120,20 +142,20 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 
 ## Dashboard Screenshots
 
-### Executive Summary
-![Executive Summary Card](outputs/01_executive_summary_card.png)
+### Executive Summary Card
+![Executive Summary Card - KPI metrics](outputs/01_executive_summary_card.png)
 
 ### Department Comparison
-![Department Comparison Bar](outputs/02_department_comparison_bar.png)
+![Department Comparison Bar Chart](outputs/02_department_comparison_bar.png)
 
 ### Income Bracket Analysis
-![Income Bracket Analysis](outputs/03_income_bracket_analysis.png)
+![Income Bracket Analysis Chart](outputs/03_income_bracket_analysis.png)
 
 ### Age Distribution
-![Age Distribution Bar](outputs/04_age_distribution_bar.png)
+![Age Distribution Bar Chart](outputs/04_age_distribution_bar.png)
 
 ### Department Income vs Attrition
-![Scatter Plot](outputs/05_scatter_department_income.png)
+![Scatter Plot - Culture vs Pay](outputs/05_scatter_department_income.png)
 
 ### Full Dashboard View
 ![Full Dashboard View](outputs/06_full_dashboard_view.png)
@@ -149,17 +171,15 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 
 ---
 
-## Limitations (Free Edition)
+## Limitations & Future Work
 
+### Current Constraints (Free Edition)
 - Dashboard cannot be published to Power BI Service (cloud)
 - Sharing requires manual distribution of .pbix file
 - No scheduled refresh capability
 - Screenshot exports used for GitHub documentation
 
----
-
-## Future Enhancements (Not Implemented)
-
+### Planned Enhancements (Not Implemented)
 | Enhancement | Priority | Effort | Rationale |
 |-------------|----------|--------|-----------|
 | Add Job Role breakdown | Low | 1 day | 9 job titles could add granularity |
@@ -171,31 +191,21 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 
 ---
 
-## Appendix: Data Quality & Methodology Notes
-
-*See Project 2 documentation for complete data cleaning methodology.*  
-This dataset inherits all cleaning decisions from the Python EDA pipeline.
-
----
-
-*Last Updated: October 9, 2026*  
-*Author: JosteinCT*  
-*Portfolio Project 3: Power BI Dashboard*
+## Contact
+- **Author:** JosteinCT
+- **GitHub:** [github.com/JosteinCT](https://github.com/JosteinCT)
+- **Email:** [josteinct@gmail.com](mailto:josteinct@gmail.com)
 
 ---
+
+*This project was developed using AI-assisted code validation and documentation review. All analytical decisions and business interpretations are the author's own work.*
+
+*Last Updated: October 12, 2026*
 
 ## License
 
-MIT License — See [LICENSE](LICENSE) file
-
----
+MIT License — See [LICENSE](LICENSE] file
 
 ## Attribution
 
 Dataset source: [Kaggle - IBM HR Analytics Employee Attrition & Performance Dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
-
----
-
-## Contact
-
-Questions or feedback? Open an issue in this repository or contact via LinkedIn.
