@@ -1,7 +1,7 @@
 # Data Analytics Portfolio | JosteinCT
 
 > **Microsoft PL-300 Certified** | SQL • Python • Power BI  
-> GitHub: [JosteinCT](https://github.com/JosteinCT) | Portfolio: [data-analytics-portfolio](https://github.com/JosteinCT/data-analytics-portfolio)
+> GitHub: [JosteinCT](https://github.com/JosteinCT) | LinkedIn: [josteinct](https://www.linkedin.com/in/josteinct)
 
 ---
 
@@ -19,7 +19,7 @@
 
 This collection demonstrates end-to-end data analytics capabilities across the modern data stack. Each project follows a complete pipeline: data extraction → analysis → visualization → business insights.
 
-**Career Target:** Junior Data Analyst roles in technology or banking sectors
+**Career Target:** Junior Data Analyst roles in technology, banking, or any sector where analytical thinking drives decisions.
 
 ---
 
@@ -80,8 +80,8 @@ This collection demonstrates end-to-end data analytics capabilities across the m
 
 - **GitHub:** [@JosteinCT](https://github.com/JosteinCT)
 - **Portfolio:** [data-analytics-portfolio](https://github.com/JosteinCT/data-analytics-portfolio)
-- **Email:** [Proton personal account] *(for privacy-first communication)*
-- **LinkedIn:** *[Update pending portfolio launch]*
+- **LinkedIn:** [josteinct](https://www.linkedin.com/in/josteinct)
+- **Email:** [josteinct@gmail.com](mailto:josteinct@gmail.com)
 
 ---
 
@@ -89,4 +89,4 @@ This collection demonstrates end-to-end data analytics capabilities across the m
 
 Each project includes its own LICENSE file. See individual repositories for details.
 
-*Last Updated: October 12, 2026*
+*Last Updated: October 16, 2026*
