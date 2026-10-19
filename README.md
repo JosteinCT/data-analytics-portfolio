@@ -59,7 +59,7 @@ This collection demonstrates end-to-end data analytics capabilities across the m
 | Northwind | Top 3 countries = 47.7% revenue | Geographic diversification needed |
 | Python EDA | Low-income employees have 5× higher attrition | Compensation review priority |
 | Python EDA | Early-career attrition = 27.8% | Design early-retention programs |
-| Power BI | Culture outweighs income for retention | Holistic HR strategy needed |
+| Power BI | Department attrition does not follow average income (R&D: lowest pay, best retention; Sales: highest pay, worst) | Department-level factors beyond pay warrant investigation |
 
 ---
 

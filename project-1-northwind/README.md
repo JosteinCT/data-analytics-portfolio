@@ -6,7 +6,7 @@
 | Query | Business Question | Key Finding |
 |-------|------------------|-------------|
 | 01 | Top customer revenue concentration | Top 3 customers drive 25% of revenue |
-| 02 | Monthly sales trends (Jan 1996–Aug 1998) | May 1998 anomaly: -66% revenue collapse |
+| 02 | Monthly sales trends (July 1996–May 1998) | May 1998: -66% revenue vs Apr 1998 (final month of dataset; possible truncation) |
 | 03 | Customer retention/loyalty | 67% loyal customers (3 years), 95.5% overall retention |
 | 04 | Geographic market analysis | Top 3 countries = 47.7% revenue concentration risk |
 | 05 | Product category performance | Beverages + Dairy = 39.7% of total revenue |
@@ -29,7 +29,7 @@
 - **Dataset:** Northwind Traders Sample Database
 - **Original Source:** Microsoft SQL Server Samples (public domain)
 - **PostgreSQL Conversion:** [pthom/northwind_psql](https://github.com/pthom/northwind_psql)
-- **Date Period:** January 1996 – August 1998 (32 months)
+- **Date Period:** July 1996 – May 1998 
 - **License:** Public Domain / MIT
 
 ## Database Schema
@@ -92,8 +92,14 @@ Identify revenue drivers and customer value segments to inform sales strategy an
 |--------|-------|
 | Overall Trend | Strong growth through 1997 (+70% to +110% YoY) |
 | Peak Performance | March 1998 (+172% revenue vs. previous year) |
-| Major Anomaly | May 1998 (-66% revenue, -56% orders) |
+| Data Boundary | Dataset ends May 6, 1998 — 14 orders across 6 days |
+| Reported Anomaly | May 1998 (-66% revenue, -56% orders) — truncation artifact, not demand collapse |
 | Pattern | Q1-Q2 1998 outperformed Q3-Q4 1997 significantly |
+| Scope Note | Trend conclusions drawn through April 1998; May 1998 excluded from YoY comparisons |
+
+### Data Range Note
+
+This dataset spans **July 1996 to May 1998**. The May 1998 revenue drop (-66% vs. April) coincides with the dataset's endpoint. Without June–August 1998 data, we cannot distinguish whether this reflects genuine demand collapse or truncated record-keeping. Further investigation would require the complete fiscal year.
 
 [View Full Results](./outputs/monthly_sales_trend.csv)
 

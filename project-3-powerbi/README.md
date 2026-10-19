@@ -72,7 +72,7 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 | **Department Comparison** | Attrition rate by department | Horizontal bar chart |
 | **Income Bracket Analysis** | Compensation threshold effects | Horizontal bar chart |
 | **Age Distribution** | Demographic breakdown | Horizontal bar chart |
-| **Department Income vs Attrition** | Culture vs pay correlation | Scatter plot |
+| **Department Income vs Attrition** | Attrition vs pay correlation | Scatter plot |
 
 **Note:** Time-series trend analysis omitted due to lack of date column in dataset.
 
@@ -90,7 +90,7 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 | Add Employee ID index? | SKIP | EmployeeNumber already unique |
 | Add AttritionFlag binary? | SKIP | Text "Yes"/"No" works in DAX |
 | Create date table? | SKIP | No temporal data in source |
-| Build star schema? | SKIP | Single flat table sufficient |
+| Build star schema? | SKIP | n=1,470 from single flat source; star schema deferred until multi-table scaling required |
 
 **Documentation:** [power_query_steps.md](src/power_query_steps.md)
 
@@ -131,12 +131,11 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 - **Gap:** 2.7x difference in turnover risk
 - **Recommendation:** Implement mentorship programs for new hires
 
-### Insight 3: Department Culture Affects Retention Independently
-- Research & Development: Lowest income but **13.9% attrition** (best retention)
-- Sales: Highest income but **20.8% attrition** (worst retention)
-- **Gap:** 6.9 percentage points between R&D and Sales
-- **Insight:** Pay alone doesn't determine retention — departmental factors (workload, role stress, career path) play a decisive role
-- **Recommendation:** Investigate workload and burnout factors in Sales; R&D practices may offer transferable retention strategies
+### Insight 3: Average Income Does Not Explain Department-Level Attrition
+- While low monthly income is a strong individual-level attrition predictor (25.2% below the income threshold vs. 4.9% above), this relationship inverts at the department level.
+- R&D reports the lowest average monthly income but the lowest attrition rate (X%), while Sales reports among the highest average
+income but the highest attrition (20.8%). This suggests department-level factors — not visible directly in this dataset — outweigh average pay in explaining department retention differences.
+- Candidate mechanisms would require additional data (e.g., exit interviews, workload metrics) to test.
 
 ---
 
