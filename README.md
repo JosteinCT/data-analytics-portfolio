@@ -87,6 +87,6 @@ This collection demonstrates end-to-end data analytics capabilities across the m
 
 ## 📄 License
 
-Each project includes its own LICENSE file. See individual repositories for details.
+Each project folder includes its own LICENSE file (MIT).
 
-*Last Updated: October 16, 2026*
+*Last Updated: November 11, 2026*
