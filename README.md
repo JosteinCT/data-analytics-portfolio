@@ -81,7 +81,6 @@ This collection demonstrates end-to-end data analytics capabilities across the m
 - **GitHub:** [@JosteinCT](https://github.com/JosteinCT)
 - **Portfolio:** [data-analytics-portfolio](https://github.com/JosteinCT/data-analytics-portfolio)
 - **LinkedIn:** [josteinct](https://www.linkedin.com/in/josteinct)
-- **Email:** [josteinct@gmail.com](mailto:josteinct@gmail.com)
 
 ---
 
