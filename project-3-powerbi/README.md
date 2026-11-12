@@ -193,7 +193,6 @@ income but the highest attrition (20.8%). This suggests department-level factors
 ## Contact
 - **Author:** JosteinCT
 - **GitHub:** [github.com/JosteinCT](https://github.com/JosteinCT)
-- **Email:** [josteinct@gmail.com](mailto:josteinct@gmail.com)
 
 ---
 

@@ -138,7 +138,6 @@ This project explores employee attrition patterns at IBM using exploratory data 
 ## Contact
 - **Author:** JosteinCT
 - **GitHub:** [github.com/JosteinCT](https://github.com/JosteinCT)
-- **Email:** [josteinct@gmail.com](mailto:josteinct@gmail.com)
 
 ---
 

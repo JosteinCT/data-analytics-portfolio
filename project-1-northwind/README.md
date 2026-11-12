@@ -137,7 +137,6 @@ This dataset spans **July 1996 to May 1998**. The May 1998 revenue drop (-66% vs
 ## Contact
 - **Author:** JosteinCT
 - **GitHub:** [github.com/JosteinCT](https://github.com/JosteinCT)
-- **Email:** [josteinct@gmail.com](mailto:josteinct@gmail.com)
 
 ---
 
