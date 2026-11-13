@@ -104,8 +104,8 @@ This project transforms Python EDA insights into an interactive Power BI dashboa
 | Total Employees | `COUNTROWS(Employees)` | 1,470 |
 | Attrition Count | `CALCULATE([Total], Attrition="Yes")` | 237 |
 | Attrition Rate % | `DIVIDE([Count], [Total])` | 16.1% |
-| Avg Monthly Income | `AVERAGE(MonthlyIncome)` | $6,504 |
-| Avg Job Satisfaction | `AVERAGE(JobSatisfaction)` | 2.6 |
+| Avg Monthly Income | `AVERAGE(MonthlyIncome)` | $6,381 |
+| Avg Job Satisfaction | `AVERAGE(JobSatisfaction)` | 2.7 |
 
 ### Advanced Calculations
 | Measure | Formula Pattern | Use Case |
@@ -197,8 +197,6 @@ income but the highest attrition (20.8%). This suggests department-level factors
 ---
 
 *This project was developed using AI-assisted code validation and documentation review. All analytical decisions and business interpretations are the author's own work.*
-
-*Last Updated: October 12, 2026*
 
 ## License
 

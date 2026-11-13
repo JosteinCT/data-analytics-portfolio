@@ -143,8 +143,6 @@ This project explores employee attrition patterns at IBM using exploratory data 
 
 *This project was developed using AI-assisted code validation and documentation review. All analytical decisions and business interpretations are the author's own work.*
 
-*Last Updated: October 12, 2026*
-
 ## License
 
 MIT License — See LICENSE file
